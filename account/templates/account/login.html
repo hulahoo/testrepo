@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<title> THe best site </title>
+<style type="text/css">
+.fullscreen-bg {
+    overflow: hidden;
+    z-index:0;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding-top:45%;
+}
+.fas { transition:0.8s;}
+ .fas:hover
+ {
+	color:red; 
+	
+ }
+.fullscreen-bg__video {
+	filter:blur(1px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+.login {
+	 
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+   z-index:1;
+	color:#b3ffe0;
+	background:5px double blue;
+	text-align:center;
+	
+}
+p { font-size:30px; font-family:verdana; cursor:pointer; transition:1.2s;} p:hover{ font-size:38px;}
+ .login 
+@media (max-width: 767px) {
+    .fullscreen-bg {
+        background: url('../images/plane.jpg') center center / cover no-repeat;
+    }
+ 
+    .fullscreen-bg__video {
+        display: none;
+    }
+}
+.login input[type="text"],.login input[type="password"]
+{
+	cursor:pointer;
+	background:	 black;
+	border:2px solid #80ffe5;
+	width:200px;
+	height:38px;
+	border-radius:20px;
+	text-decoration:uppercase;
+	font-family:cursive;
+	text-align:center;
+	transition:1s;
+	}
+	.login input[type="submit"]
+	{
+		background:none;
+		cursor:pointer;
+		border:3px double #80ffe5;
+		color:#9494b8;
+		border-radius:10px;
+	transition:1s;
+	}
+	.top{
+		margin-top:150px;
+	}
+.login input:hover[type="text"],.login input:hover[type="password"]
+{
+	color:black; 
+	border: 3px double red;
+	width:240px;
+	background:white;
+	height:45px;
+}
+   }
+#pro
+{
+	
+	color:white;
+}
+</style>
+</head>
+<body>
+<div class="fullscreen-bg">
+    <div class="login">
+	<div class="top">
+	<div class="animation">
+
+
+	</div>
+     <p> <i class="fas fa-hand-point-right"></i> LOGIN  <i class="fas fa-hand-point-left"></i></p>
+	 <br/>  <br/>  
+	 <input type="text" name="name" class="name" placeholder="NAME..." title="NAME"> </input>
+	 <br/>  <br/> <br/> 
+	 <input type="password" name="password" class="password" placeholder="PASSWORD..." title="PASSWORD"> </input>
+	  <br/>  <br/> 
+	 <a href="{% url 'index-page' %}"><input type="submit" name="submit" title="Click here to submit"
+	 </a></input>
+	
+	 </div>
+    </div>
+    <video loop muted autoplay poster="video/plane.jpg" class="fullscreen-bg__video">
+        <source src="C:\Users\MIke 001\Desktop\WebSite\zip_Words\Words.mp4"> 	
+    </video>
+</div>
+
+</body>
+</html>
