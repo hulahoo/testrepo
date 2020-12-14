@@ -3,15 +3,8 @@ from django.contrib.auth.models import User
 from django.contrib.auth.views import LoginView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse_lazy
-from django.views.generic import CreateView, FormView, TemplateView, ListView
-
+from django.views.generic import CreateView, FormView, TemplateView
 from .forms import RegistrationForm, ChangePasswordForm
-
-
-class IndexPage(ListView):
-    """главная страница"""
-    # template_name = 'account/index.html'  # указываем по какому html
-    context_object_name = 'categories'  # здесь мы указываем имя для связии с шаблоном
 
 
 class RegistrationView(CreateView):
