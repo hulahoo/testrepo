@@ -1,6 +1,5 @@
 """Импортируем классы с class view"""
 from django.urls import path
-
 from .views import PostListView, IndexPage
 
 urlpatterns = [

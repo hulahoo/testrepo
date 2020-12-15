@@ -1,121 +1,534 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title> made by 189076010 Muhammad </title>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-<title> THe best site </title>
-<style type="text/css">
-.fullscreen-bg {
-    overflow: hidden;
-    z-index:0;
-    position: relative;
-    height: 100%;
-    width: 100%;
-    padding-top:45%;
-}
-.fas { transition:0.8s;}
- .fas:hover
- {
-	color:red; 
-	
- }
-.fullscreen-bg__video {
-	filter:blur(1px);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-
-
-.login {
-	 
-    background: rgba(0,0,0,0.6);
-    position: absolute;
-    top:0;
-    left:0;
-    width: 100%;
-    height: 100%;
-   z-index:1;
-	color:#b3ffe0;
-	background:5px double blue;
-	text-align:center;
-	
-}
-p { font-size:30px; font-family:verdana; cursor:pointer; transition:1.2s;} p:hover{ font-size:38px;}
- .login 
-@media (max-width: 767px) {
-    .fullscreen-bg {
-        background: url('../images/plane.jpg') center center / cover no-repeat;
-    }
- 
-    .fullscreen-bg__video {
-        display: none;
-    }
-}
-.login input[type="text"],.login input[type="password"]
+  <!-- i remove the link of css and combinate css with html by <style> -->
+  <style type="text/css">
+body 
 {
+	background-image:url('http://bayguzin.ru/assets/images/2014/04/kvadratiki.jpg');
+	 background-blend-mode:multiply;
+	 background-color:#cceeff;
+}
+header 
+{
+	
+	font-family:Curcum,Arial,Helvetical, sans-serif;
+}
+.about
+{
+	transition: transition-property;
+	transition-duration: 0.8s;
+    font-family:sans-serif;	
 	cursor:pointer;
-	background:	 black;
-	border:2px solid #80ffe5;
-	width:200px;
-	height:38px;
-	border-radius:20px;
-	text-decoration:uppercase;
-	font-family:cursive;
-	text-align:center;
-	transition:1s;
-	}
-	.login input[type="submit"]
-	{
-		background:none;
-		cursor:pointer;
-		border:3px double #80ffe5;
-		color:#9494b8;
-		border-radius:10px;
-	transition:1s;
-	}
-	.top{
-		margin-top:150px;
-	}
-.login input:hover[type="text"],.login input:hover[type="password"]
-{
-	color:black; 
-	border: 3px double red;
-	width:240px;
-	background:white;
-	height:45px;
+	color:white;
+
 }
-   }
-#pro
+.info
+{
+	font-family:sans-serif;
+	color:white;
+	font:cursive;
+	font-size:15px;
+	
+}
+
+
+.menu *{
+	
+	border-radius:5px;
+	margin:0;
+	padding:0;
+}
+.menu ul 
+{
+	list-style:none;
+}
+.menu > ul 
+{
+	color:#5e5959;
+	display:flex;
+	justify-content:center;
+}
+
+.menu > ul li a
 {
 	
+	display:block;
+	background:/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ebf1f6+0,abd3ee+50,89c3eb+51,d5ebfb+100;Blue+Gloss+%234 */
+background: rgb(235,241,246); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(235,241,246,1) 0%, rgba(171,211,238,1) 50%, rgba(137,195,235,1) 51%, rgba(213,235,251,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(235,241,246,1) 0%,rgba(171,211,238,1) 50%,rgba(137,195,235,1) 51%,rgba(213,235,251,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(235,241,246,1) 0%,rgba(171,211,238,1) 50%,rgba(137,195,235,1) 51%,rgba(213,235,251,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf1f6', endColorstr='#d5ebfb',GradientType=0 ); /* IE6-9 */
+;
+	padding:15px 30px 15px 40px;
+	text-transform:uppercase;
+	font-size:16px;
+	text-decoration:none;
+	color:black;
+	transition-duration:1s ;
+}
+.menu > ul li
+{
+	border-right:1px;
+}
+.menu > ul li > a i.fa
+{
+	
+	left:5px;
+	padding:3px;
+}
+
+.menu > ul li:last-child
+{
+	
+	border-right:1px solid; 
+}
+.menu > ul li:first-child
+{
+	border-left:1px solid; 
+}
+.menu li a:hover
+{
+	color:#60294f;
+	background-color:#3d4147;
+	transition-duration:1s ;
+}
+.menu li ul
+{
+	
+	position:absolute;
+	display:none;
+	min-width:140px;
+}
+.menu li > ul li{
+	border:1px solid black;
+	
+
+}
+.menu li > li ul a {
+	text-transform:none;
+	padding:10px;
+}
+.menu li:hover > ul{
+	
+	display:block;
+	
+}
+
+aside
+{   
+   
+   position:fixed;
+	cursor:pointer;
+	margin-top:80px;
+	font-size:23px;
+	border:5px solid #788182;
+	background-color:white;
+
+	color:black;
+	padding:3px 5px 3px 2px;
+}
+p
+{
+	text-align:center;
+}
+#text1{
+   padding:20px 5px 20px 250px;
+	font-size:26px;
+	text-align:center;
 	color:white;
 }
+#img
+{
+	margin-top:20px;
+	background-color:#b3d5d8;
+	margin-left:500px;
+	position:absolute;
+	float:center;
+	height:300px;
+	width:400px;
+}
+.bis 
+{
+	text-decoration:underline;
+	
+}
+
+.cube
+{
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ebf1f6+0,abd3ee+50,89c3eb+51,d5ebfb+100;Blue+Gloss+%234 */
+background: rgb(235,241,246); /* Old browsers */
+width:200px;
+height:120px;
+background: -moz-linear-gradient(left,  rgba(235,241,246,1) 0%, rgba(171,211,238,1) 50%, rgba(137,195,235,1) 51%, rgba(213,235,251,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(235,241,246,1) 0%,rgba(171,211,238,1) 50%,rgba(137,195,235,1) 51%,rgba(213,235,251,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(235,241,246,1) 0%,rgba(171,211,238,1) 50%,rgba(137,195,235,1) 51%,rgba(213,235,251,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf1f6', endColorstr='#d5ebfb',GradientType=1 ); /* IE6-9 */
+
+}
+#name
+
+{
+	cursor:pointer; 
+	text-align:center;
+	margin-left:15px;
+	margin-top:5px;
+	height:30px;
+	border:2px;
+}
+#password
+
+{
+	cursor:pointer; 
+	text-align:center;
+margin-left:15px;
+	margin-top:10px;
+	height:30px;
+	border:2px;
+}
+
+#submit:hover
+{
+
+	border:3px double white;
+}
+#submit{ background-color:white;
+ margin-left:15px; 
+ margin-top:10px;
+ cursor:pointer;  
+ }
+ aside 
+ {
+	 padding:5px;
+	 
+	 border:black;
+	 border-radius:8px;
+	 height:380px;
+	 width:150px;
+	 /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b3dced+0,29b8e5+50,bce0ee+100;Blue+Pipe */
+background: rgb(179,220,237); /* Old browsers */
+background: -moz-linear-gradient(-45deg,  rgba(179,220,237,1) 0%, rgba(41,184,229,1) 50%, rgba(188,224,238,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  rgba(179,220,237,1) 0%,rgba(41,184,229,1) 50%,rgba(188,224,238,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  rgba(179,220,237,1) 0%,rgba(41,184,229,1) 50%,rgba(188,224,238,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+ }
+ aside > ol { font-family:cursive;}
+ aside > ol li:hover{
+	 color:blue;
+	
+ }
+.swipe{ margin-left:200px;
+margin-bottom:20px;
+ margin-top:20px;
+ display:grid;
+ grid-template-columns:300px  300px 300px;
+ grid-gap:20px; 
+ grid-template-rows:500px 500px 500px; 
+ grid-auto-rows:100px; }
+.swipe div{ 
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#73b1e7+5,d0e4f7+21,73b1e7+39,d0e4f7+47,539fe1+60,d0e4f7+75,539fe1+92,539fe1+100 */
+background: rgb(115,177,231); /* Old browsers */
+background: -moz-linear-gradient(-45deg,  rgba(115,177,231,1) 5%, rgba(208,228,247,1) 21%, rgba(115,177,231,1) 39%, rgba(208,228,247,1) 47%, rgba(83,159,225,1) 60%, rgba(208,228,247,1) 75%, rgba(83,159,225,1) 92%, rgba(83,159,225,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  rgba(115,177,231,1) 5%,rgba(208,228,247,1) 21%,rgba(115,177,231,1) 39%,rgba(208,228,247,1) 47%,rgba(83,159,225,1) 60%,rgba(208,228,247,1) 75%,rgba(83,159,225,1) 92%,rgba(83,159,225,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  rgba(115,177,231,1) 5%,rgba(208,228,247,1) 21%,rgba(115,177,231,1) 39%,rgba(208,228,247,1) 47%,rgba(83,159,225,1) 60%,rgba(208,228,247,1) 75%,rgba(83,159,225,1) 92%,rgba(83,159,225,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73b1e7', endColorstr='#539fe1',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  transition:0.5s;
+ border:2px solid black;
+ padding:8px 15px;
+
+ border-radius:7px;  }
+ div,span
+{
+	margin-top:20px;
+	font-family:italic,Arial;
+	text-align:center;
+}
+div > .swipe1:hover
+{
+	background:url("https://static.svyaznoy.ru/upload/iblock/08c/8a_black12.jpg/resize/307x224/");
+   transform:rotate(1turn); 
+   color:white;
+   border-radius:30px;
+   border: 6px double yellow;
+   cursor:pointer;
+}
+div > .swipe2:hover
+{
+	background:url("https://static.svyaznoy.ru/upload/iblock/435/13.jpg/resize/307x224/");
+   transform:rotate(1turn); 
+   color:white;
+   border-radius:30px;
+   border: 6px double yellow;
+   cursor:pointer;
+ 
+}
+div > .swipe3:hover
+{
+	background:url("https://static.svyaznoy.ru/upload/iblock/c09/red.jpg/resize/307x224/");
+   transform:rotate(1turn); 
+   color:white;
+   border-radius:30px;
+   border: 6px double yellow;
+   cursor:pointer;
+}
+div > .swipe4:hover
+{
+	background:url("https://static.svyaznoy.ru/upload/iblock/400/13.jpg/resize/307x224/");
+   transform:rotate(1turn); 
+   color:white;
+   border-radius:30px;
+   border: 6px double #5ffc05;
+   cursor:pointer;
+}
+div > .swipe5:hover
+{
+	background:url("https://static.svyaznoy.ru/upload/iblock/aaa/13.jpg/resize/307x224/");
+   transform:rotate(1turn); 
+   color:white;
+   border-radius:30px;
+   border: 6px double #5ffc05;
+   cursor:pointer;
+}
+div > .swipe6:hover
+{
+	background:url("https://static.svyaznoy.ru/upload/iblock/71f/blue.jpg/resize/307x224/");
+   transform:rotate(1turn); 
+   color:white;
+   border-radius:30px;
+   border: 6px double #5ffc05;
+   cursor:pointer;
+}
+div > .swipe7:hover
+{
+	background:url("https://static.svyaznoy.ru/upload/iblock/08c/8a_black12.jpg/resize/307x224/");
+   transform:rotate(1turn); 
+   color:white;
+   border-radius:30px;
+   border: 6px double#f407f0;
+   cursor:pointer;
+}
+div > .swipe8:hover
+{
+	background:url("https://static.svyaznoy.ru/upload/iblock/51deba0bb5c06dcd8788724893c1946c/11.jpg/resize/307x224/");
+   transform:rotate(1turn); 
+   color:white;
+   border-radius:30px;
+   border: 6px double #f407f0;
+   cursor:pointer;
+}
+div > .swipe9:hover
+{
+	background:url("https://static.svyaznoy.ru/upload/iblock/0e4/sm-a600fn_001_front_black.jpg/resize/307x224/");
+   transform:rotate(1turn); 
+   color:white;
+   border-radius:30px;
+   border: 6px double #f407f0;
+   cursor:pointer;
+}
+
+.jpg 
+{
+	margin-left:10px;
+	margin-top:10px;
+	width:130px;
+	border-radius:18px;
+}
+
+
+footer
+{
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d0e4f7+0,73b1e7+29,0a77d5+52,539fe1+71,87bcea+93 */
+background: rgb(208,228,247); /* Old browsers */
+background: -moz-linear-gradient(-45deg,  rgba(208,228,247,1) 0%, rgba(115,177,231,1) 29%, rgba(10,119,213,1) 52%, rgba(83,159,225,1) 71%, rgba(135,188,234,1) 93%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  rgba(208,228,247,1) 0%,rgba(115,177,231,1) 29%,rgba(10,119,213,1) 52%,rgba(83,159,225,1) 71%,rgba(135,188,234,1) 93%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  rgba(208,228,247,1) 0%,rgba(115,177,231,1) 29%,rgba(10,119,213,1) 52%,rgba(83,159,225,1) 71%,rgba(135,188,234,1) 93%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0e4f7', endColorstr='#87bcea',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+	height:150px;
+	border:2px double orange;
+}
+.pages
+{
+	
+	list-style-type:none;
+	text-align:center;
+}
+.pages > li
+{
+
+	display:inline;
+	padding-right:10px;
+} 
+A {   color: yellow;}
+A:hover{ font-size:25px; }
+footer div 
+{
+	
+	font-size:20px;
+	float:right;
+	list-style-type:none;
+	margin-right:30px;
+}
+footer span 
+{
+	color:black;
+	font-size:20px;
+	float:left;
+	list-style-type:none;
+	margin-left:30px;
+}
+footer > li 
+
+{
+	
+	text-decoration:none;
+	color:black;
+	font-size:17px;
+	text-align:center;
+	list-style-type:none;
+	
+}
+footer A
+{
+	margin-bottom:10px;
+	color:black;
+	text-decoration:none;
+	font-family:italic;
+}
+footer A:hover
+{
+	font-size:25px;
+	color:blue;
+	transition-duration:0.8s;
+}
+
 </style>
 </head>
 <body>
-<div class="fullscreen-bg">
-    <div class="login">
-	<div class="top">
-	<div class="animation">
+<style></style>
+<header>
 
+  <details> 
+<summary class="about" align="right"><big><> About Creator <><big></summary>
+ <ul> <li class="info"> Pozilov Muhammadsoli </li>
+     <li class="info"> date of birth 2000.10.18 </li>
+    <li class="info"> IT programmer </li> 
+<li class="info"> Software Engineer </li> 
+<li class="info"> wechat num: 13155358196 </li>
+<li class="info"> mm7223360@gmail.com </li> 	
+</ul>
+ </details>
+ 
+<nav class="menu">
 
-	</div>
-     <p> <i class="fas fa-hand-point-right"></i> LOGIN  <i class="fas fa-hand-point-left"></i></p>
-	 <br/>  <br/>  
-	 <input type="text" name="name" class="name" placeholder="NAME..." title="NAME"> </input>
-	 <br/>  <br/> <br/> 
-	 <input type="password" name="password" class="password" placeholder="PASSWORD..." title="PASSWORD"> </input>
-	  <br/>  <br/> 
-	 <input type="submit" name="submit" title="Click here to submit" <a href="file:///C:/C%20disk/Classes/HTML+%20CSS%20files/lesson2.html">
-	 </a> </input>
-	
-	 </div>
-    </div>
-    <video loop muted autoplay poster="video/plane.jpg" class="fullscreen-bg__video">
-        <source src="C:\Users\MIke 001\Desktop\WebSite\zip_Words\Words.mp4"> 	
-    </video>
+<ul>
+    <li><a href="#"><i class="fa fa-home"></i>  Main</a> </li>
+	<li><a href="#"><i class="fa fa-shopping-cart"></i>  Productions</a>
+        <ul>   
+		<li><a href="#"> Pacific  </a></li>
+		<li><a href="#"> BlumHouse </a></li>
+		<li><a href="#"> Tremolo </a></li>
+		<li><a href="#"> Harge </a></li>
+		<li><a href="#"> Vanguard </a></li>
+		</ul>
+	</li>
+	<li><a href="#"><i class="fa fa-cogs"></i>   Settings  </a> 
+   <ul>
+   <li><a href="#"> Language</a></li>
+		<li><a href="#"> Bacground </a></li>
+		<li><a href="#"> Download list </a></li>
+		<li><a href="#"> Pages</a></li>
+   </ul>
+
+	</li>
+	<li><a href="#"><i class="fa fa-th-list"></i>  News</a>
+ <ul>
+   <li><a href="#"> About us</a></li>
+		<li><a href="#"> Bussines news </a></li>
+		<li><a href="#"> International trade </a></li>
+		<li><a href="#"> Cooperate </a></li>
+   </ul>
+
+	</li>
+	<li><a href="#"><i class="fa fa-envelope-open"></i>  Contacts</a> 
+	<ul>
+	<li><a href="#"> +996558925992 </a></li>
+	<li><a href="#"> +996550505150</a></li>
+	<li><a href="#"> +996777511502 </a></li>
+	</ul>
+	</li>
+		<li> <center> <a href="#"><i class="fa fa-user-plus"></i> Log in </center></a> 
+		<ul>
+		<form>
+		<div class="cube">
+	  <input  id="name" type="text" name="name" placeholder="Name..."/> 
+	    <input id="password" type="password" name="password" placeholder="Password..."/> 
+			<a href="{% url 'signup' %}"><button type="button" class="btn btn-primary"></button></a>
+          <a href="{% url 'signin' %}"><button type="button" class="btn btn-primary"></button></a>
+	  </div>
+</form>
+	</ul>
+	</li>
+		
+</ul>
+</nav>
+</header>
+<aside> 
+<ol> 
+
+<li> Apple </li>
+<li>Oppo </li>
+<li> Xiaomi </li>
+<li> Meizu </li>
+<li> Honor </li>
+<li> Lenovo </li>
+<li> LG </li>
+<li> Samsung </li>
+<li> Sony </li>
+<li> Lite+ </li>
+ </ol>
+ </aside>
+<div class="swipe">
+ <div class="swipe1"> <span> Apple Iphone XS Max<p> 512(GB)</p>
+ </span> <img class="jpg" src="https://static.svyaznoy.ru/upload/iblock/cb3/img_0010.jpg/resize/307x224/"> </img>  </div>
+	 <div class="swipe2"> <span> Apple Iphone XR<p> 256(GB)</p> </span> <img class="jpg" src="https://static.svyaznoy.ru/upload/iblock/435/13.jpg/resize/307x224/"> </img> </div>
+	 <div class="swipe3"> <span> Apple Iphone XS </span><p>256(GB)</p><img class="jpg" src="https://static.svyaznoy.ru/upload/iblock/c09/red.jpg/resize/307x224/"> </img> </div>
+	 <div class="swipe4"> <span> Apple Iphone XR<p> 64(GB)</p> </span> <img class="jpg" src="https://static.svyaznoy.ru/upload/iblock/400/13.jpg/resize/307x224/"> </img> </div>
+	 <div class="swipe5"> <span> Honor VIew20<p> 64(GB)</p> </span> <img class="jpg" src="https://static.svyaznoy.ru/upload/iblock/aaa/13.jpg/resize/307x224/"> </img> </div>
+	 <div class="swipe6"> <span> Honor 10I<p> 128(GB)</p> </span> <img class="jpg" src="https://static.svyaznoy.ru/upload/iblock/71f/blue.jpg/resize/307x224/"> </img>  </div>
+	 <div class="swipe7"><span>  Honor 8A<p> 32(GB)</p></span> <img class="jpg" src="https://static.svyaznoy.ru/upload/iblock/08c/8a_black12.jpg/resize/307x224/"> </img></div>
+	 <div class="swipe8"> <span> Apple Iphone 7+<p> 128(GB)</p></span> <img class="jpg" src="https://static.svyaznoy.ru/upload/iblock/51deba0bb5c06dcd8788724893c1946c/11.jpg/resize/307x224/"> </img> </div>
+	 <div class="swipe9"> <span> Apple 8A+<p> 512(GB)</p></span> <img class="jpg" src="https://static.svyaznoy.ru/upload/iblock/0e4/sm-a600fn_001_front_black.jpg/resize/307x224/"> </img> </div>
 </div>
+<hr width="120px"> </hr>
+<div class="pages">
+<li> <a href="#"> 1</a> </li>
+<li> <a href="#"> 2</a> </li>
+<li> <a href="#"> 3</a> </li>
+<li> <a href="#"> 4</a> </li>
+<li> <a href="#"> 5</a> </li>
+<hr width="120px"> </hr>
 
+
+</div>
+<footer>
+<li> <a class="ap" href="#"> APPLE </a> </li>
+<li> <a class="ap" href="#"> SAMSUNG </a> </li>
+<li> <a class="ap" href="#"> HUAWEI</a> </li>
+<div>
+<li> <a href="#"> OPPO </a> </li>
+<li> <a href="#"> HONOR </a> </li>
+<li> <a href="#"> XIAOMI </a> </li> </div>
+<span><li> <a href="#"> LG </a> </li>
+<li> <a href="#"> SONY </a> </li>
+<li> <a href="#"> MEIZU </a> </li></span>
+</footer>
 </body>
 </html>
+
